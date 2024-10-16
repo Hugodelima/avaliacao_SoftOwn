@@ -13,6 +13,12 @@ function Header() {
             Acessar o <span className='font-bold'>Sistema</span>
           </button>
         </div>
+
+        <div className='flex flex-col text-center text-md m-4'>
+          <h2 className='z-10 text-white font-bold text-4xl m-10'>Eleve sua experiência com a gestão inteligente
+          de processos.</h2>
+          <p className='z-10 text-white m-auto text-2xl md:w-[56%]'><span className='font-semibold'>Diga adeus às planilhas e papéis! <br/></span>Nosso sistema transforma a forma como você gerencia seus casos. Automatize tarefas, centralize informações e ganhe mais tempo para focar no que realmente importa: <span className='font-semibold'>seus clientes.</span></p>
+        </div>
       </div> 
     </>
   )
