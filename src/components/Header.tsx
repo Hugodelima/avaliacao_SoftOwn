@@ -19,6 +19,16 @@ function Header() {
           de processos.</h2>
           <p className='z-10 text-white m-auto text-2xl md:w-[56%]'><span className='font-semibold'>Diga adeus às planilhas e papéis! <br/></span>Nosso sistema transforma a forma como você gerencia seus casos. Automatize tarefas, centralize informações e ganhe mais tempo para focar no que realmente importa: <span className='font-semibold'>seus clientes.</span></p>
         </div>
+
+        <div className='flex justify-center items-center m-8 gap-4'>
+          <button className='text-textSoft z-10 bg-white rounded-md p-2 font-semibold border-solid border-2 border-white'>
+            Conheça nossa ferramenta
+          </button>
+          <button className='text-white z-10 border-solid border-2 rounded-md p-2 font-semibold'>
+            Conheça nossos planos
+          </button>
+        </div>
+
       </div> 
     </>
   )
