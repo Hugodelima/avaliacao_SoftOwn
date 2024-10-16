@@ -20,13 +20,17 @@ function Header() {
           <p className='z-10 text-white m-auto text-2xl md:w-[56%]'><span className='font-semibold'>Diga adeus às planilhas e papéis! <br/></span>Nosso sistema transforma a forma como você gerencia seus casos. Automatize tarefas, centralize informações e ganhe mais tempo para focar no que realmente importa: <span className='font-semibold'>seus clientes.</span></p>
         </div>
 
-        <div className='flex justify-center items-center m-8 gap-4'>
+        <div className='flex justify-center items-center mr-8 ml-8 mt-8 mb-16 gap-4'>
           <button className='text-textSoft z-10 bg-white rounded-md p-2 font-semibold border-solid border-2 border-white'>
             Conheça nossa ferramenta
           </button>
           <button className='text-white z-10 border-solid border-2 rounded-md p-2 font-semibold'>
             Conheça nossos planos
           </button>
+        </div>
+
+        <div className='flex justify-center m-4 md:w-[80%] md:m-auto'>
+          <img src={first} className='z-10' />
         </div>
 
       </div> 
