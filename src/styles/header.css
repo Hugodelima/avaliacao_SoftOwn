@@ -1,17 +1,18 @@
-.header {
+.imageBackground {
     position: relative;
     background-image: url('../assets/background.png');
     background-size: cover;
     height: 750px; 
 }
 
+
 @media screen and (max-width: 900px){
-    .header {
-        height: 950px; 
+    .imageBackground {
+        height: auto; 
     }
 }
 
-.header::before {
+.imageBackground::before {
     content: ''; 
     position: absolute; 
     top: 0;
@@ -21,3 +22,29 @@
     background-color: #0277EEE0;
     z-index: 1; 
 }
+
+.product{
+    display: flex;
+    position: relative;
+    bottom: 6rem;
+    margin: auto;
+    width: 80%;
+}
+@media screen and (max-width: 1400px){
+    .product{
+        bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .product{
+        bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .product{
+        width: 100%;
+    }
+}
+
