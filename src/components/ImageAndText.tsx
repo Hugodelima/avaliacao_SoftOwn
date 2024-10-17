@@ -9,10 +9,13 @@ interface ImageAndTextProps {
 
 function ImageAndText({direction, imageComponent,title,description,listMarcation, background}: ImageAndTextProps){
 
+  const flexDirectionClass = (direction === "R" ? "flex-wrap-reverse" : "flex-wrap");
+  const backgroundClass = (background ? "bg-background" : "");
+
   return (
 
     <>
-      <div className={ background ? "flex flex-wrap xl:flex-nowrap p-40 bg-background gap-10" : 'flex flex-wrap xl:flex-nowrap p-40 gap-10'}>
+      <div className={`flex ${flexDirectionClass} xl:flex-nowrap p-40 gap-10 ${backgroundClass}`}>
         {direction === 'L' ? (
 
           <div>
@@ -39,13 +42,11 @@ function ImageAndText({direction, imageComponent,title,description,listMarcation
         </div>
 
         {direction === 'R' ? (
-            <div>
-                <img src={imageComponent} className="" />
-            </div>
+          <div>
+            <img src={imageComponent} className="" />
+          </div>
         ) : null}
-  </div>
-
-        
+      </div>
     </>
   )
 }
