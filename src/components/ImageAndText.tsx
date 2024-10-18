@@ -15,7 +15,7 @@ function ImageAndText({direction, imageComponent,title,description,listMarcation
   return (
 
     <>
-      <div className={`flex ${flexDirectionClass} xl:flex-nowrap p-40 gap-10 ${backgroundClass}`}>
+      <div className={`flex ${flexDirectionClass} xl:flex-nowrap md:p-40 p-4 gap-10 ${backgroundClass}`}>
         {direction === 'L' ? (
 
           <div>
