@@ -6,6 +6,7 @@ export default {
       colors:{
         textSoft: '#0277EE',
         background: '#F8F9FA',
+        textGray: '#6B7280',
       },
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],

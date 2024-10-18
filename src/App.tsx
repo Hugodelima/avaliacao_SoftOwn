@@ -87,7 +87,11 @@ function App(){
                     
                 </div>
             </div>
-            <PricingTable title='Inicial' description='Lorem ipsum dolor sit amet,consectetur adipiscing praesent.' price='30' listAdvantage={['Lorem ipsum sit consectetur.','']}  />
+            <div className='flex flex-wrap justify-center gap-4 md:p-8'>
+                <PricingTable title='Inicial' description='Lorem ipsum dolor sit amet,consectetur adipiscing praesent.' price='30' listAdvantage={['Lorem ipsum sit consectetur.','ff']}  />
+                <PricingTable title='Inicial' description='Lorem ipsum dolor sit amet,consectetur adipiscing praesent.' price='30' listAdvantage={['Lorem ipsum sit consectetur.','2323']}  />
+                <PricingTable title='Inicial' description='Lorem ipsum dolor sit amet,consectetur adipiscing praesent.' price='30' listAdvantage={['Lorem ipsum sit consectetur.','2323']}  />
+            </div>
         </>
     )
 
