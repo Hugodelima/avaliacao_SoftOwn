@@ -20,25 +20,51 @@ function App(){
 
             <ImageAndText direction={'L'} imageComponent={fifth} title={'Agenda e prontuário de seus pacientes.'} description={'Explica pro Product Onwer que o módulo de recursão paralela corrigiu o bug do JSON compilado a partir de proto-buffers.'} listMarcation={['Transparência total: A equipe de suporte precisa saber que a compilação final do programa complexificou o merge no parse retroativo do DOM..', 'Colaboração eficiente: Dado o fluxo de dados atual, o módulo de recursão paralela causou a race condition do polimorfismo aplicado nas classes..']} background={true} />
 
-            <div className={`flex flex-wrap xl:flex-nowrap p-40 gap-10 bg-textSoft`}>
-                <div className="flex flex-col justify-center mb-32">
-                <h2 className="text-textSoft font-bold text-xl mb-4">Elimine todos papéis do seu escritório.</h2>
-                <h3>b</h3>
-              
-                <div className="flex gap-2">
-                    <i className="bi bi-check-circle-fill text-textSoft"></i>
-                    <li className="mb-2">
-                        <span className="text-textSoft font-semibold"></span>
-                    </li>
-                </div>
+            <div className={`flex flex-wrap xl:flex-nowrap gap-10 bg-textSoft`}>
+                <div className="flex flex-col justify-center mb-32 p-16">
+                    <h2 className="text-white font-bold text-xl mb-4">Elimine todos papéis do seu escritório.</h2>
+                
+                    <div className="flex gap-2 flex-col">
+                        <div className='flex gap-4'>
+                            <i className="bi bi-check-circle-fill text-white"></i>
+                            <li className="mb-2 text-white">
+                                <span className="text-white font-semibold">Agilidade nos processos: </span>
+                                Como a digitalização acelera a busca e o compartilhamento de informações.
+                            </li>
+                        </div>
+                        <div className='flex gap-4'>
+                            <i className="bi bi-check-circle-fill text-white"></i>
+                            <li className="mb-2 text-white">
+                                <span className="text-white font-semibold">Automatização de tarefas: </span>
+                                Como a digitalização acelera a busca e o compartilhamento de informações.
+                            </li>
+
+                        </div>
+                        <div className='flex gap-4'>
+                            <i className="bi bi-check-circle-fill text-white"></i>
+                            <li className="mb-2 text-white">
+                                <span className="text-white font-semibold">Agilidade nos processos: </span>
+                                Redução do trabalho manual com a digitalização de documentos e assinatura eletrônica.
+                            </li>
+                        </div>
+                        <div className='flex gap-4'>
+                            <i className="bi bi-check-circle-fill text-white"></i>
+                            <li className="mb-2 text-white">
+                                <span className="text-white font-semibold">Melhoria na colaboração: </span>
+                                Facilidade para equipes trabalharem em conjunto em documentos digitais, independentemente da localização
+                            </li>
+                        </div>
+                    </div>
                   
                 </div>
 
                
-                <div className='flex'>
-                    <img src={ilustration} className="" />
-                    <img src={sixty_decoration} className="" />
+                <div className="relative flex justify-center items-center">
+                    <img src={sixty_decoration} className="w-auto h-auto" />
+                    <img src={ilustration} className="absolute left-0" />
                 </div>
+
+
                
             </div>
         </>
