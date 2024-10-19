@@ -13,7 +13,7 @@ function Footer() {
     <>
       <div className='bg-textSoft p-4'>
 
-        <img src={logo_footer} className='w-[10%] m-auto' alt="" />
+        <img src={logo_footer} className='w-[40%] sm:w-[30%] md:w-[20%] lg:w-[10%] m-auto' alt="SoftOwn" />
 
         <div className='flex flex-col items-center mt-4'>
             <div className='flex gap-2'>
@@ -21,11 +21,11 @@ function Footer() {
                 <p className='text-white font-bold'>SoftOwn 2024.  <span className='font-normal'>Todos os direitos reservados.</span></p>
             </div>
             <div className='flex gap-4 mt-4'>
-                <ImageHref link='#' iconImage={FiFacebook} />
-                <ImageHref link='#' iconImage={FiInstagram} />
-                <ImageHref link='#' iconImage={FiLinkedin} />
-                <ImageHref link='#' iconImage={FaXTwitter} />
-                <ImageHref link='#' iconImage={FiYoutube} />  
+              <ImageHref link='#' iconImage={FiFacebook} />
+              <ImageHref link='#' iconImage={FiInstagram} />
+              <ImageHref link='#' iconImage={FiLinkedin} />
+              <ImageHref link='#' iconImage={FaXTwitter} />
+              <ImageHref link='#' iconImage={FiYoutube} />  
             </div>
         </div>
       </div> 

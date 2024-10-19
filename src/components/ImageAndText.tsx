@@ -19,7 +19,7 @@ function ImageAndText({direction, imageComponent,title,description,listMarcation
         {direction === 'L' ? (
 
           <div>
-            <img src={imageComponent} className="" />
+            <img src={imageComponent} />
           </div>
         ) : null}
 
