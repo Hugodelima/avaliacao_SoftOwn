@@ -8,7 +8,6 @@ interface TextAndWhatssapProps{
 function TextAndWhatssap({title, description, textButton, background}: TextAndWhatssapProps){
 
     const backgroundClass = (background ? "bg-background" : "");
-    console.log("pedro:", background)
 
     return(
         <div className={`flex flex-col md:p-20 p-4 bg-background text-center ${backgroundClass}`}>
