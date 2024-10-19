@@ -11,6 +11,8 @@ import PricingTable from './components/PricingTable.tsx'
 
 import './styles/index.css'
 import TextAndWhatssap from './components/TextAndWhatssap.tsx'
+import Accordion from './components/Accordion.tsx'
+import Footer from './components/Footer.tsx'
 
 
 function App(){
@@ -85,7 +87,17 @@ function App(){
                 <PricingTable title='Inicial' description='Lorem ipsum dolor sit amet,consectetur adipiscing praesent.' price='30' listAdvantage={['Lorem ipsum sit consectetur.','2323']}  />
             </div>
 
+            <div className='flex flex-col justify-center md:p-8 bg-background'>
+                <h2 className="text-textSoft font-bold text-xl mb-4 text-center">Perguntas frequentes</h2>
+                <Accordion title='Lorem ipsum dolor sit amet, consectetur adipiscing elit?' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat porttitor suscipit. Proin congue tristique erat quis elementum. Fusce nec iaculis justo, id elementum leo suspendisse sed molestie risus, ac ultricies ex.' />
+                <Accordion title='Lorem ipsum dolor sit amet, consectetur adipiscing elit?' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat porttitor suscipit. Proin congue tristique erat quis elementum. Fusce nec iaculis justo, id elementum leo suspendisse sed molestie risus, ac ultricies ex.' />
+                <Accordion title='Lorem ipsum dolor sit amet, consectetur adipiscing elit?' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat porttitor suscipit. Proin congue tristique erat quis elementum. Fusce nec iaculis justo, id elementum leo suspendisse sed molestie risus, ac ultricies ex.' />
+                <Accordion title='Lorem ipsum dolor sit amet, consectetur adipiscing elit?' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat porttitor suscipit. Proin congue tristique erat quis elementum. Fusce nec iaculis justo, id elementum leo suspendisse sed molestie risus, ac ultricies ex.' />
+                <Accordion title='Lorem ipsum dolor sit amet, consectetur adipiscing elit?' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat porttitor suscipit. Proin congue tristique erat quis elementum. Fusce nec iaculis justo, id elementum leo suspendisse sed molestie risus, ac ultricies ex.' />
+            </div>
+
             <TextAndWhatssap title='Agende uma demonstração gratuita ' description='Descubra como nossa plataforma pode transformar seu escritório.' textButton='Fale com nosso time de vendas' background={false} />
+            <Footer />
         </>
     )
 }
