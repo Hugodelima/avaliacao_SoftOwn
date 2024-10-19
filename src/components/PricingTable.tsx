@@ -8,11 +8,11 @@ interface PricingTableProps {
 
 function PricingTable( {title, description, price, listAdvantage, favorite }: PricingTableProps){
   return (
-
-    <div className="border-solid border-2 rounded-md border-gray-400 shadow-md border-opacity-10 p-4 relative pt-8">
+    
+    <div className="border-solid border-2 rounded-md border-gray-400 shadow-md border-opacity-10 p-4 relative pt-8 xl:w-[24%]">
       {favorite ?
-        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-          <button className='text-white z-10 bg-textGreen rounded-md p-2 border-solid border-2 border-white w-auto m-auto relative pl-8'>
+        <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-full">
+          <button className='text-white z-10 bg-textGreen rounded-md p-2 border-solid border-2 border-white w-auto m-auto relative pl-8 flex items-center'>
             Plano mais contratado
             <i className="bi bi-star text-white absolute left-2"></i>
           </button>
@@ -36,7 +36,7 @@ function PricingTable( {title, description, price, listAdvantage, favorite }: Pr
           );
         })}
       </div>
-      <div className="absolute bottom-4 w-[94%]">
+      <div className="absolute bottom-4 w-[92%] left-1/2 transform -translate-x-1/2">
         <button className='text-white bg-textSoft rounded-md p-2 font-semibold border-solid border-2 border-white w-full'>
           Selecionar este plano
         </button>
