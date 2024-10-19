@@ -28,10 +28,13 @@ function PricingTable( {title, description, price, listAdvantage, favorite }: Pr
       <div className="flex flex-col gap-4 mb-16">
         {
         listAdvantage.map((string, index) => {
+
+          const stringPositionTwoPoins = string.indexOf(':')
+
           return(
             <div className="flex gap-2" key={index}>
               <i className="bi bi-check-circle-fill text-textGreen"/>
-              <li className=" text-textGray">{string}<span className="font-bold text-textGray">fggfdgf</span></li>
+              <li className=" text-textGray">{string.substring(0, stringPositionTwoPoins-1)}<span className="font-bold text-textGray">{string.substring(stringPositionTwoPoins+1)}</span></li>
             </div>
           );
         })}

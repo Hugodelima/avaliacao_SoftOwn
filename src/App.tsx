@@ -83,9 +83,9 @@ function App(){
             </div>
 
             <div className='flex flex-wrap justify-center gap-8 md:p-8 p-4'>
-                <PricingTable title='Inicial' description='Lorem ipsum dolor sit amet,consectetur adipiscing praesent.' price='30' listAdvantage={['Lorem ipsum sit consectetur.','ff','f','f']} />
-                <PricingTable title='Inicial' description='Lorem ipsum dolor sit amet,consectetur adipiscing praesent.' price='30' listAdvantage={['Lorem ipsum sit consectetur.','2323']} favorite={true} />
-                <PricingTable title='Inicial' description='Lorem ipsum dolor sit amet,consectetur adipiscing praesent.' price='30' listAdvantage={['Lorem ipsum sit consectetur.','2323']}  />
+                <PricingTable title='Inicial' description='Lorem ipsum dolor sit amet,consectetur adipiscing praesent.' price='30' listAdvantage={['Lorem ipsum : sit consectetur.','Praesent : luctus facilisis.','Aenean lobortis | velit a suscipit.','Nulla consequat : sem sit amet.']} />
+                <PricingTable title='Intermediário' description='Lorem ipsum dolor sit amet,consectetur adipiscing praesent.' price='30' listAdvantage={['Lorem ipsum : sit consectetur.','Praesent : luctus facilisis.','Aenean lobortis | velit a suscipit.','Nulla consequat : sem sit amet.']} favorite={true} />
+                <PricingTable title='Completo' description='Lorem ipsum dolor sit amet,consectetur adipiscing praesent.' price='30' listAdvantage={['Lorem ipsum : sit consectetur.','Praesent : luctus facilisis.','Aenean lobortis | velit a suscipit.','Nulla consequat : sem sit amet.']}  />
             </div>
 
             <div className='flex flex-col justify-center p-8 mt-8 bg-background'>
@@ -98,7 +98,7 @@ function App(){
             </div>
 
             <TextAndWhatssap title='Agende uma demonstração gratuita ' description='Descubra como nossa plataforma pode transformar seu escritório.' textButton='Fale com nosso time de vendas' background={false} />
-            
+
             <Footer />
         </>
     )
