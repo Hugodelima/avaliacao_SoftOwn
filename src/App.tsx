@@ -10,6 +10,7 @@ import ImageAndText from './components/ImageAndText.tsx'
 import PricingTable from './components/PricingTable.tsx'
 
 import './styles/index.css'
+import TextAndWhatssap from './components/TextAndWhatssap.tsx'
 
 
 function App(){
@@ -69,33 +70,24 @@ function App(){
                 </div>
             </div>
 
-            <div className={`flex flex-col md:p-20 p-4 bg-background text-center`}>
-                <h2 className="text-textSoft font-bold text-xl mb-1">Comece seu teste gratuito hoje!</h2>
-                <h3 className='mb-8'>Entre em contato com nosso time e agende uma demonstração gratuita!</h3>
-                
-                <button className='text-white z-10 bg-textSoft rounded-md p-2 font-semibold border-solid border-2 border-white w-auto m-auto relative pr-8'>
-                Fale com nosso time de vendas
-                    <i className="bi bi-whatsapp absolute right-2"></i>
-                </button>
+        
+            <TextAndWhatssap title='Comece seu teste gratuito hoje!' description='Entre em contato com nosso time e agende uma demonstração gratuita!' textButton='Fale com nosso time de vendas' background={true} />
+
+            <div className='flex flex-col text-center mt-[6rem]'>
+                <h2 className="text-textSoft font-bold text-xl mb-1 text-center">Nossos planos</h2>
+                <h3 className='mb-8 text-center text-textGray'>Encontre o melhor plano de acordo com 
+                a necessidade do seu escritório.</h3>
             </div>
 
-            <div className={`flex flex-col md:p-20 p-4 text-center`}>
-                <h2 className="text-textSoft font-bold text-xl mb-1">Nossos planos</h2>
-                <h3 className='mb-8'>Encontre o melhor plano de acordo com a necessidade do seu escritório.</h3>
-                
-                <div className='flex flex-wrap'>
-                    
-                </div>
-            </div>
-            <div className='flex flex-wrap justify-center gap-4 md:p-8'>
-                <PricingTable title='Inicial' description='Lorem ipsum dolor sit amet,consectetur adipiscing praesent.' price='30' listAdvantage={['Lorem ipsum sit consectetur.','ff']}  />
+            <div className='flex flex-wrap justify-center gap-8 md:p-8'>
+                <PricingTable title='Inicial' description='Lorem ipsum dolor sit amet,consectetur adipiscing praesent.' price='30' listAdvantage={['Lorem ipsum sit consectetur.','ff','f','f']}  />
                 <PricingTable title='Inicial' description='Lorem ipsum dolor sit amet,consectetur adipiscing praesent.' price='30' listAdvantage={['Lorem ipsum sit consectetur.','2323']}  />
                 <PricingTable title='Inicial' description='Lorem ipsum dolor sit amet,consectetur adipiscing praesent.' price='30' listAdvantage={['Lorem ipsum sit consectetur.','2323']}  />
             </div>
+
+            <TextAndWhatssap title='Agende uma demonstração gratuita ' description='Descubra como nossa plataforma pode transformar seu escritório.' textButton='Fale com nosso time de vendas' background={false} />
         </>
     )
-
-
 }
 
 export default App
