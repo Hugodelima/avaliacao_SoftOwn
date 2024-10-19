@@ -3,12 +3,21 @@ interface PricingTableProps {
   description: string;
   price: string;
   listAdvantage: string[];
+  favorite?: boolean;
 }
 
-function PricingTable( {title, description, price, listAdvantage }: PricingTableProps){
+function PricingTable( {title, description, price, listAdvantage, favorite }: PricingTableProps){
   return (
 
-    <div className="border-solid border-2 rounded-md border-gray-400 shadow-md border-opacity-10 p-4 relative">
+    <div className="border-solid border-2 rounded-md border-gray-400 shadow-md border-opacity-10 p-4 relative pt-8">
+      {favorite ?
+        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+          <button className='text-white z-10 bg-textGreen rounded-md p-2 border-solid border-2 border-white w-auto m-auto relative pl-8'>
+            Plano mais contratado
+            <i className="bi bi-star text-white absolute left-2"></i>
+          </button>
+        </div>
+      : null}
       
       <h3 className='text-textSoft text-center font-bold text-xl mb-1'>{title}</h3>
       <p className="font-light text-center w-[80%] m-auto">{description}</p>
