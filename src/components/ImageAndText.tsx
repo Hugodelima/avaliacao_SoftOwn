@@ -1,3 +1,5 @@
+import dot from '../assets/dot_blue.svg'
+
 interface ImageAndTextProps {
   direction: string;
   imageComponent: string; 
@@ -18,8 +20,9 @@ function ImageAndText({direction, imageComponent,title,description,listMarcation
       <div className={`flex ${flexDirectionClass} xl:flex-nowrap md:p-40 p-4 gap-10 ${backgroundClass}`}>
         {direction === 'L' ? (
 
-          <div>
-            <img src={imageComponent} />
+          <div className='relative'>
+            <img src={imageComponent} className='relative z-10 ' />
+            <img src={dot} className='absolute -bottom-20 -left-24 z-0' />
           </div>
         ) : null}
 
