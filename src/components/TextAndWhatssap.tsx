@@ -16,10 +16,12 @@ function TextAndWhatssap({title, description, textButton, background}: TextAndWh
             <h2 className="text-textSoft font-bold text-xl mb-1 mt-8">{title}</h2>
             <h3 className='mb-8'>{description}</h3>
             
-            <button className='text-white z-10 bg-textSoft rounded-md p-2 font-semibold border-solid border-2 border-white w-auto m-auto relative flex items-center gap-1'>
-            {textButton}
-                <PiWhatsappLogo color="white" className="" />
-            </button>
+            <a href="" target="_blank">
+                <button className='text-white z-10 bg-textSoft rounded-md p-2 font-semibold border-solid border-2 border-white w-auto m-auto relative flex items-center gap-1  transition-all duration-300 ease-in-out hover:border-textSoft hover:scale-105 hover:shadow-md'>
+                {textButton}
+                    <PiWhatsappLogo color="white" className="" />
+                </button>
+            </a>
             
         </div>
     )

@@ -8,7 +8,7 @@ interface ImageHrefProps{
 function ImageHref({link, iconImage: IconImage}: ImageHrefProps){
     return(
         <>
-            <a href={link} target="_blank">
+            <a href={link} target="_blank" className="transition-transform duration-300 ease-in-out hover:scale-125 hover:opacity-80">
                 <IconImage color="white"/>
             </a>
         </>

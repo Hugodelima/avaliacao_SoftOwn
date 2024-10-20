@@ -13,9 +13,11 @@ function Header() {
           <img src={dot} className='absolute right-8 top-0 z-10' />
           <div className='flex justify-between p-4 sm:p-10 md:p-16 items-center gap-2 md:gap-4'>
             <img src={logoWhite} alt='SoftOwn Solutions' className='z-10 h-14 sm:h-16 md:h-24 w-auto' />
-            <button className='text-textSoft z-10 bg-white h-10 p-1 rounded-md text-sm sm:p-2 sm:text-base md:text-xl'>
-              Acessar o <span className='font-bold'>Sistema</span>
-            </button>
+            <a href="https://www.softownsolutions.com.br/" target="_blank" className='z-10'>
+              <button className='text-textSoft bg-white p-1 rounded-md text-sm sm:p-2 sm:text-base md:text-xl  transition-all duration-300 ease-in-out hover:bg-textSoft hover:text-white hover:scale-105 hover:shadow-lg hover:border-2'>
+                Acessar o <span className='font-bold'>Sistema</span>
+              </button>
+            </a>
           </div>
 
           <div className='flex flex-col text-center text-md m-4'>
@@ -25,12 +27,17 @@ function Header() {
           </div>
 
           <div className='flex justify-center items-center mr-8 ml-8 mt-8 pb-10 gap-4'>
-            <button className='text-textSoft z-10 bg-white rounded-md p-2 font-semibold border-solid border-2 border-white'>
-              Conheça nossa ferramenta
-            </button>
-            <button className='text-white z-10 border-solid border-2 rounded-md p-2 font-semibold'>
-              Conheça nossos planos
-            </button>
+            <a href='#about' className='z-10'>
+              <button className='text-textSoft bg-white rounded-md p-2 font-semibold border-solid border-2 border-white  transition-all duration-300 ease-in-out hover:scale-105'>
+                Conheça nossa ferramenta
+              </button>
+            </a>
+
+            <a href='#price' className='z-10'>
+              <button className='text-white border-solid border-2 rounded-md p-2 font-semibold  transition-all duration-300 ease-in-out hover:scale-105'>
+                Conheça nossos planos
+              </button>
+            </a>
           </div>
         </div>
 

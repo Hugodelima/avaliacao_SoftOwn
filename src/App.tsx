@@ -19,7 +19,7 @@ function App(){
     return(
         <>
             <Header />
-            <div className='mt-8'>
+            <div id='about' className='mt-8'>
                 <ImageAndText direction={'L'} imageComponent={third} title={'Foco na otimização de processos'} description={''} listMarcation={['Organize seus casos: Tenha todos os seus processos em um só lugar, com informações completas e atualizadas.','Automatize tarefas: Elimine tarefas repetitivas e ganhe mais tempo para atender seus clientes.','Melhore a comunicação: Facilite a comunicação com seus clientes e equipe, agilizando o processo.','Gere relatórios personalizados: Tenha insights valiosos sobre o desempenho do seu escritório.']} background={true} />
 
                 <ImageAndText direction={'R'} imageComponent={four} title={'Proteja seus dados e garanta a conformidade com as normas jurídicas.'} description={''} listMarcation={['Segurança de dados: Proteja os dados dos seus clientes com as mais modernas tecnologias de segurança.', 'Conformidade legal: Garanta que seu escritório esteja em conformidade com as normas e regulamentações.', 'Auditoria: Gere relatórios detalhados para acompanhar o cumprimento das normas e regulamentações.', 'Backup: Tenha a garantia de que seus dados estão seguros com nosso sistema de backup.']} background={false} />
@@ -76,7 +76,7 @@ function App(){
             
             <TextAndWhatssap title='Comece seu teste gratuito hoje!' description='Entre em contato com nosso time e agende uma demonstração gratuita!' textButton='Fale com nosso time de vendas' background={true} />
 
-            <div className='flex flex-col text-center mt-20'>
+            <div id='price' className='flex flex-col text-center mt-20'>
                 <h2 className="text-textSoft font-bold text-xl mb-1 text-center">Nossos planos</h2>
                 <h3 className='mb-8 text-center text-textGray'>Encontre o melhor plano de acordo com 
                 a necessidade do seu escritório.</h3>
