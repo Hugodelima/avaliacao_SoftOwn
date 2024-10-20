@@ -30,3 +30,11 @@ li{
     filter: blur(0);
     transform: translateX(0)
 }
+
+@media (max-width: 768px) {
+    .secret{
+        transform: translateX(-100%);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        filter: none;
+    }
+}
