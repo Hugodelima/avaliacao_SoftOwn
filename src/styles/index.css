@@ -37,4 +37,7 @@ li{
         transition: opacity 0.5s ease, transform 0.5s ease;
         filter: none;
     }
+    .show{
+        transform: translateX(0)
+    }
 }
