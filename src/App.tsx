@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 
 import third from './assets/third.png'
 import four from './assets/four.png'
@@ -15,7 +16,29 @@ import Accordion from './components/Accordion.tsx'
 import Footer from './components/Footer.tsx'
 
 
+
+
+
 function App(){
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.secret');
+        hiddenElements.forEach((el) => observer.observe(el));
+
+        return () => {
+            hiddenElements.forEach((el) => observer.unobserve(el));
+        };
+    }, []);
+      
+
     return(
         <>
             <Header />
@@ -27,7 +50,7 @@ function App(){
                 <ImageAndText direction={'L'} imageComponent={fifth} title={'Agenda e prontuário de seus pacientes.'} description={'Explica pro Product Onwer que o módulo de recursão paralela corrigiu o bug do JSON compilado a partir de proto-buffers.'} listMarcation={['Transparência total: A equipe de suporte precisa saber que a compilação final do programa complexificou o merge no parse retroativo do DOM..', 'Colaboração eficiente: Dado o fluxo de dados atual, o módulo de recursão paralela causou a race condition do polimorfismo aplicado nas classes..']} background={true} />
             </div>
 
-            <div className="flex flex-wrap xl:flex-nowrap gap-0 bg-textSoft">
+            <div className="flex flex-wrap xl:flex-nowrap gap-0 bg-textSoft secret">
 
                 <div className="flex flex-col justify-center mb-12 md:p-16 p-4">
                     <h2 className="text-white font-bold text-xl mb-4">Elimine todos papéis do seu escritório.</h2>
@@ -76,19 +99,19 @@ function App(){
             
             <TextAndWhatssap title='Comece seu teste gratuito hoje!' description='Entre em contato com nosso time e agende uma demonstração gratuita!' textButton='Fale com nosso time de vendas' background={true} />
 
-            <div id='price' className='flex flex-col text-center mt-20'>
+            <div id='price' className='flex flex-col text-center mt-20 secret'>
                 <h2 className="text-textSoft font-bold text-xl mb-1 text-center">Nossos planos</h2>
                 <h3 className='mb-8 text-center text-textGray'>Encontre o melhor plano de acordo com 
                 a necessidade do seu escritório.</h3>
             </div>
 
-            <div className='flex flex-wrap justify-center gap-8 md:p-8 p-4'>
+            <div className='flex flex-wrap justify-center gap-8 md:p-8 p-4 secret'>
                 <PricingTable title='Inicial' description='Lorem ipsum dolor sit amet,consectetur adipiscing praesent.' price='30' listAdvantage={['Lorem ipsum : sit consectetur.','Praesent : luctus facilisis.','Aenean lobortis | velit a suscipit.','Nulla consequat : sem sit amet.']} />
                 <PricingTable title='Intermediário' description='Lorem ipsum dolor sit amet,consectetur adipiscing praesent.' price='30' listAdvantage={['Lorem ipsum : sit consectetur.','Praesent : luctus facilisis.','Aenean lobortis | velit a suscipit.','Nulla consequat : sem sit amet.']} favorite={true} />
                 <PricingTable title='Completo' description='Lorem ipsum dolor sit amet,consectetur adipiscing praesent.' price='30' listAdvantage={['Lorem ipsum : sit consectetur.','Praesent : luctus facilisis.','Aenean lobortis | velit a suscipit.','Nulla consequat : sem sit amet.']}  />
             </div>
 
-            <div className='flex flex-col justify-center p-8 mt-8 bg-background'>
+            <div className='flex flex-col justify-center p-8 mt-8 bg-background secret'>
                 <h2 className="text-textSoft font-bold text-xl mb-4 mt-8 text-center">Perguntas frequentes</h2>
                 <Accordion title='Lorem ipsum dolor sit amet, consectetur adipiscing elit?' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat porttitor suscipit. Proin congue tristique erat quis elementum. Fusce nec iaculis justo, id elementum leo suspendisse sed molestie risus, ac ultricies ex.' />
                 <Accordion title='Lorem ipsum dolor sit amet, consectetur adipiscing elit?' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat porttitor suscipit. Proin congue tristique erat quis elementum. Fusce nec iaculis justo, id elementum leo suspendisse sed molestie risus, ac ultricies ex.' />
